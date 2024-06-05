@@ -14,6 +14,11 @@ return [
     |
     */
 
+    'shiftbase' => [
+        'base_url' => env('SHIFTBASE_BASE_URL'),
+        'token' => env('SHIFTBASE_TOKEN'),
+    ],
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],

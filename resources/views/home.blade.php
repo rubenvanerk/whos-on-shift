@@ -21,16 +21,35 @@
         <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
              style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
-            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Support center</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-                commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 h-full flex flex-col justify-between">
+        <div>
+            <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Support center</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-300">
+                    Welcome to the support center. Here you can find all the information you need to get started with our services.
+                </p>
+            </div>
+            <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+                <x-card
+                        :title="$user->fullName()"
+                        description="Give {{ $user->firstName }} a call on {{ $user->phoneNumber }} or send him an email: {{ $user->email }}">
+
+                <span class="inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-white">
+                  <svg class="h-1.5 w-1.5 fill-green-400" viewBox="0 0 6 6" aria-hidden="true">
+                    <circle cx="3" cy="3" r="3"/>
+                  </svg>
+                  Currently on shift!
+                </span>
+                </x-card>
+            </div>
         </div>
-        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
-            <x-card title="Sales" description="Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur."/>
+
+        <div class="text-gray-400">
+            This is an example project of how to use the Shiftbase API in Laravel |
+            <a href="https://github.com/rubenvanerk/whos-on-shift" class="underline hover:text-gray-200 transition" target="_blank">GitHub</a>
         </div>
     </div>
+
 </div>
 
 </body>
