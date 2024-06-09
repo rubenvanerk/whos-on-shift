@@ -8,6 +8,8 @@
 
     {{--  Not how I would usually do this ;)  --}}
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.usefathom.com/script.js" data-site="JHNCFLTH" defer></script>
 </head>
 <body class="h-screen">
 <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-screen">
@@ -45,7 +47,7 @@
         </div>
 
         <div class="text-gray-400">
-            This is an example project of how to use the Shiftbase API in Laravel |
+            This is an example project by <a href="https://rubenvanerk.com" class="underline hover:text-gray-200 transition"a >Ruben van Erk</a> to show how to use the Shiftbase API in Laravel |
             <a href="https://github.com/rubenvanerk/whos-on-shift" class="underline hover:text-gray-200 transition" target="_blank">GitHub</a>
         </div>
     </div>
